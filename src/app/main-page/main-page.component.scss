@@ -1,0 +1,39 @@
+.lastNews{
+  text-align: center;
+}
+
+.news-list{
+  margin-left: 10%;
+}
+
+.containter{
+  color: aliceblue;
+}
+
+.news{
+  max-width: 90%;
+  border-bottom: 2px solid;
+}
+
+.pagination{
+  margin-top: 2%;
+}
+
+.pagination-button{
+  border-radius: 10%;
+  background-color: #0ebbe8;
+  width: 5%;
+  color: black;
+  height: 5%;
+}
+
+.pagination-button:disabled{
+  background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+  color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+  border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
+.pagination-label{
+  margin-left: 1%;
+  margin-right: 1%;
+}

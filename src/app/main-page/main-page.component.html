@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-md-12">
+    <h1 class="lastNews">Últimas Notícias</h1>
+    <carrosel></carrosel>
+  </div>
+  <div class="news-list col-md-12">
+    <div class="news" *ngFor="let news of ultimasNoticias; let i = index">
+      <h3>{{ news.titulo }}</h3>
+      <p>{{ news.conteudo }}</p>
+    </div>
+    <div class="pagination">
+      <button class="pagination-button" (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
+      <span class="pagination-label"> Página {{ currentPage }} de {{ totalPages }}</span>
+      <button class="pagination-button" (click)="nextPage()" [disabled]="currentPage === totalPages">Próxima</button>
+    </div>
+  </div>
+</div>
